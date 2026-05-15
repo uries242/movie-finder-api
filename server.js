@@ -11,8 +11,6 @@ app.get("/test", (req, res) => {
 app.use("/api/movies", routes);
 
 
-
-
 app.listen(PORT, () => {
   console.log(`Listening on Port: ${PORT}`);
 });

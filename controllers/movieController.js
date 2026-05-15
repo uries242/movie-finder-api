@@ -1,5 +1,6 @@
 const axios = require("axios");
 
+// searchMovies Handler/Controller Function
 const searchMovies = async (req, res) => {
   const title = req.query.title;
 
@@ -21,9 +22,20 @@ const searchMovies = async (req, res) => {
   }
 };
 
+// getMovieDetails Handler/Controller Function 
 const getMovieDetails = async (req, res) => {
-  const title = req.query.params;
+  const id = req.params.id;
 
+  try {
+    const response = await axios.get("http://www.omdbapi.com/", {
+      params: {
+        i: id,
+        apikey: process.env.OMDB_API_KEY,
+      },
+    });
+    res.json(response.data);
+  } catch (error) {
+    res.status(500).json({ error: "Something went wrong" });
+  }
 };
-
 
