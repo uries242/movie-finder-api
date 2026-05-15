@@ -20,3 +20,10 @@ const searchMovies = async (req, res) => {
     res.status(500).json({ error: "Something went wrong" });
   }
 };
+
+const getMovieDetails = async (req, res) => {
+  const title = req.query.params;
+
+};
+
+
