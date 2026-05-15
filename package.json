@@ -1,19 +1,28 @@
 {
   "name": "movie-finder-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "Node & Express SBA",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Lateyko Adderley",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
     "axios": "^1.16.1",
     "dotenv": "^17.4.2",
     "express": "^5.2.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uries242/movie-finder-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/uries242/movie-finder-api/issues"
+  },
+  "homepage": "https://github.com/uries242/movie-finder-api#readme"
 }
