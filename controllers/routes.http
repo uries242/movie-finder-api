@@ -1,0 +1,7 @@
+### Test the root route
+GET http://localhost:3001/test
+
+###
+
+### 
+GET http://localhost:3000/test
